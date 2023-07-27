@@ -1,0 +1,73 @@
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Set a background color for the whole app */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Drawing board container */
+.drawing-board {
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Windows Paint-like header */
+#toolbar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 200px;
+    background-color: #0078d4;
+    color: white;
+}
+
+#toolbar h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#toolbar label {
+    font-size: 14px;
+}
+
+#toolbar input {
+    margin-bottom: 10px;
+}
+
+#toolbar button {
+    background-color: #106ebe;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#toolbar button:hover {
+    background-color: #095c9a;
+}
+
+/* Drawing board canvas */
+#drawing-board {
+    display: block;
+    margin: 10px;
+    border: 2px solid #0078d4;
+    border-radius: 6px;
+    cursor: crosshair;
+}
